@@ -3,7 +3,7 @@ import os
 from flask import Flask, render_template, jsonify, request
 
 app = Flask(__name__)
-app.secret_key = os.urandom(24)
+app.secret_key = os.environ.get("SECRET_KEY", os.urandom(24))
 
 QUESTIONS_FILE = os.path.join(os.path.dirname(__file__), "questions.json")
 POINTS_CORRECT = 10
