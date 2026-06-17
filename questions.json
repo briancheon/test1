@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "question": "What is 17 × 8?",
+    "options": ["126", "136", "144", "152"],
+    "answer": "136"
+  },
+  {
+    "id": 2,
+    "question": "What is the square root of 144?",
+    "options": ["10", "11", "12", "13"],
+    "answer": "12"
+  },
+  {
+    "id": 3,
+    "question": "If a triangle has angles of 45° and 65°, what is the third angle?",
+    "options": ["60°", "70°", "75°", "80°"],
+    "answer": "70°"
+  },
+  {
+    "id": 4,
+    "question": "What is 15% of 240?",
+    "options": ["30", "36", "40", "48"],
+    "answer": "36"
+  },
+  {
+    "id": 5,
+    "question": "Solve for x: 3x + 7 = 22",
+    "options": ["3", "4", "5", "6"],
+    "answer": "5"
+  },
+  {
+    "id": 6,
+    "question": "What is 2⁸?",
+    "options": ["128", "256", "512", "64"],
+    "answer": "256"
+  },
+  {
+    "id": 7,
+    "question": "A rectangle has length 14 cm and width 9 cm. What is its area?",
+    "options": ["112 cm²", "116 cm²", "126 cm²", "132 cm²"],
+    "answer": "126 cm²"
+  },
+  {
+    "id": 8,
+    "question": "What is the LCM of 12 and 18?",
+    "options": ["24", "36", "48", "72"],
+    "answer": "36"
+  },
+  {
+    "id": 9,
+    "question": "If 5! = 120, what is 6!?",
+    "options": ["480", "600", "720", "840"],
+    "answer": "720"
+  },
+  {
+    "id": 10,
+    "question": "What is 3/4 + 5/6?",
+    "options": ["8/10", "19/12", "3/2", "7/5"],
+    "answer": "19/12"
+  }
+]
