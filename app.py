@@ -1,9 +1,11 @@
 import json
 import os
 from flask import Flask, render_template, jsonify, request
+from flask_cors import CORS
 
 app = Flask(__name__)
 app.secret_key = os.environ.get("SECRET_KEY", os.urandom(24))
+CORS(app, origins=["https://briancheon.github.io"])
 
 QUESTIONS_FILE = os.path.join(os.path.dirname(__file__), "questions.json")
 POINTS_CORRECT = 10

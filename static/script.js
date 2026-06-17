@@ -37,7 +37,7 @@ if (document.querySelector('.quiz-page')) {
   const playAgainBtn   = document.getElementById('play-again-btn');
 
   // ── Fetch questions ─────────────────────────
-  fetch('/api/questions')
+  fetch('https://test1-sxav.onrender.com/api/questions')
     .then(r => r.json())
     .then(data => {
       questions       = data.questions;
@@ -111,7 +111,7 @@ if (document.querySelector('.quiz-page')) {
     });
 
     // POST to server to check answer
-    fetch('/api/submit', {
+    fetch('https://test1-sxav.onrender.com/api/submit', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ answers: { [questionId]: chosen } }),
@@ -156,7 +156,7 @@ if (document.querySelector('.quiz-page')) {
     clearInterval(timerInterval);
 
     // Collect all answers and submit for full breakdown
-    fetch('/api/submit', {
+    fetch('https://test1-sxav.onrender.com/api/submit', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ answers }),
