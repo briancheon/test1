@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Math Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="quiz-page">
+
+  <!-- Header bar -->
+  <header class="quiz-header">
+    <div class="header-left">
+      <span class="logo-sm">∑</span>
+      <span class="header-title">Math Quiz</span>
+    </div>
+    <div class="header-center">
+      <div id="timer-ring">
+        <svg viewBox="0 0 48 48">
+          <circle cx="24" cy="24" r="20" class="ring-bg"/>
+          <circle cx="24" cy="24" r="20" class="ring-fill" id="ring-fill"/>
+        </svg>
+        <span id="timer-text">60</span>
+      </div>
+    </div>
+    <div class="header-right">
+      <span class="score-label">Score</span>
+      <span id="score-display" class="score-value">0</span>
+    </div>
+  </header>
+
+  <!-- Progress bar -->
+  <div class="progress-bar-wrap">
+    <div class="progress-bar" id="progress-bar"></div>
+  </div>
+
+  <!-- Question area -->
+  <main class="quiz-main">
+    <div id="loading" class="loading-state">Loading questions…</div>
+
+    <div id="question-card" class="card question-card hidden">
+      <div class="question-meta">
+        <span id="question-number" class="q-num"></span>
+        <span id="question-count" class="q-count"></span>
+      </div>
+      <p id="question-text" class="question-text"></p>
+      <div id="options-grid" class="options-grid"></div>
+    </div>
+
+    <!-- Results panel (hidden until end) -->
+    <div id="results-card" class="card results-card hidden">
+      <div id="results-icon" class="results-icon"></div>
+      <h2 id="results-title"></h2>
+      <p id="results-subtitle"></p>
+      <div class="final-score-wrap">
+        <span class="final-score-label">Final Score</span>
+        <span id="final-score" class="final-score-num"></span>
+      </div>
+      <div id="results-breakdown" class="results-breakdown"></div>
+      <div class="results-actions">
+        <a href="index.html" class="btn btn-secondary">Home</a>
+        <button id="play-again-btn" class="btn btn-primary">Play Again</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
